@@ -26,9 +26,9 @@
   </title>
 </head>
 
-<body>
+<body class="bg-gray-50">
   <!-- SUBMENU DE MARCA DEPENDIENDO DEL PRODUCTO -->
-  <nav class="bg-white border-b border-gray-200 shadow-sm">
+  <nav class="bg-white border-b border-gray-200 shadow-sm text-gray-600">
     <div class="relative">
       <!-- Contenedor con scroll horizontal -->
       <div class="nav-container flex justify-evenly overflow-x-auto md:py-2 px-4 space-x-2 scrollbar-hide">
@@ -109,36 +109,37 @@
     </div>
   </nav>
 
+  <!-- CASCADA DE NAVEGACIÓN RESPONSIVE "MARCA | PRODUCTO | NOMBRE" -->
+  <div
+    class="bg-white border-b p-3 px-4 text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
+    <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-blue-600">
+      <i class="fa-solid fa-house text-[0.9em]"></i>
+    </a>
+    <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
+    <a href="http://www.ds3comunicaciones.com/cisco/index.html"
+      class="flex-shrink-0 hover:underline hover:text-blue-600">
+      Cisco
+    </a>
+    <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
+    <a href="http://ds3comunicaciones.com/cisco/catalyst.html"
+      class="flex-shrink-0 hover:underline hover:text-blue-600">
+      Switch Catalyst
+    </a>
+    <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
+    <span class="text-slate-800 font-medium flex-shrink-0">
+      C9200L-24T-4G-E
+    </span>
+  </div>
+
   <!-- CONTENIDO DEL PRODUCTO -->
-  <main class="">
-    <!-- CASCADA DE NAVEGACIÓN RESPONSIVE "MARCA | PRODUCTO | NOMBRE" -->
-    <div
-      class="border px-3 py-2 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
-      <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-blue-600">
-        <i class="fa-solid fa-house text-[0.9em]"></i>
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <a href="http://www.ds3comunicaciones.com/cisco/index.html"
-        class="flex-shrink-0 hover:underline hover:text-blue-600">
-        Cisco
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <a href="http://ds3comunicaciones.com/cisco/catalyst.html"
-        class="flex-shrink-0 hover:underline hover:text-blue-600">
-        Switch Catalyst
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <span class="text-slate-800 font-medium flex-shrink-0">
-        C9200L-24T-4G-E
-      </span>
-    </div>
+  <main class="sm:px-4 py-4">
 
     <!-- CONTENT DE 3 COMULNAS SIDEBAR DERECHO - IZQUIERDO Y INFORMACION DE PRODUCTO -->
-    <div class="mx-auto border">
-      <div class="flex flex-col md:flex-row md:justify-evenly  mx-auto">
+    <div class="mx-auto pb-6">
+      <div class="flex flex-col md:flex-row md:justify-evenly mx-auto gap-3">
         <!-- SIDEBAR DE MARCAS (oculto en móvil) -->
         <aside
-          class="hidden lg:block bg-white p-2 rounded-lg shadow-md w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide">
+          class="hidden lg:block bg-white p-2 rounded-lg shadow w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide">
           <!-- Título -->
           <h2 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
             Nuestras Marcas
@@ -289,7 +290,7 @@
         </aside>
 
         <!-- CONTENIDO PRINCIPAL DE PRODUCTOS (siempre visible) -->
-        <div class="w-full lg:w-4/6 bg-white  rounded-lg shadow">
+        <div class="w-full lg:w-4/6 bg-white rounded-lg p-4 shadow">
           <div class="mx-auto max-w-[1200px] w-full">
             <!-- Contenedor principal del producto -->
             <div id="information-section" class="mt-5 flex flex-col lg:flex-row gap-6 flex-wrap">
@@ -698,7 +699,7 @@
 
         <!-- SIDEBAR DE LISTA DE PRECIOS (oculto en móvil) -->
         <aside id="links-sidebar"
-          class="hidden lg:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow-md h-[80vh] overflow-y-auto scrollbar-hide">
+          class="hidden lg:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow h-[80vh] overflow-y-auto scrollbar-hide">
           <div class="links-section bg-white">
             <h3 class="text-base font-bold text-black mb-3 border-b pb-2">
               Listas de Precios
