@@ -32,14 +32,14 @@
     <div class="relative">
       <!-- Contenedor con scroll horizontal -->
       <div
-        class="nav-container container mx-auto px-4 flex justify-between overflow-x-auto md:py-2 px-4 space-x-2 scrollbar-hide">
+        class="nav-container container mx-auto px-4 flex justify-between overflow-x-auto py-1 md:py-2 px-4 space-x-2 scrollbar-hide text-sm">
         <!-- Item 1 -->
         <a href="https://www.ds3comunicaciones.com/cisco/catalys_9200l.html"
           class="nav-item flex items-center p-2 rounded-lg min-w-fit flex-shrink-0 gap-1.5 sm:gap-2 hover:bg-gray-100 transition">
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <i class="fas fa-network-wired"></i>
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Switch Catalyst</span>
+          <span class="whitespace-nowrap">Switch Catalyst</span>
         </a>
 
 
@@ -49,7 +49,7 @@
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <img src="./icons/Cisco Business.ico" class="nav-icon max-h-full max-w-full" alt="Cisco Business" />
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Cisco Business</span>
+          <span class="whitespace-nowrap">Cisco Business</span>
         </a>
 
         <!-- Item 3 -->
@@ -58,7 +58,7 @@
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <img src="./icons/Switch Industrial.ico" class="nav-icon max-h-full max-w-full" alt="Switch Industrial" />
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Switch Industrial</span>
+          <span class="whitespace-nowrap">Switch Industrial</span>
         </a>
 
         <!-- Item 4 -->
@@ -79,7 +79,7 @@
                 fill="white" stroke="currentColor" stroke-width="2" />
             </svg>
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Aironet</span>
+          <span class="whitespace-nowrap">Aironet</span>
         </a>
 
         <!-- Item 5 -->
@@ -88,7 +88,7 @@
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <img src="./icons/Télefono.ico" class="nav-icon max-h-full max-w-full" alt="Teléfono" />
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Teléfono</span>
+          <span class="whitespace-nowrap">Teléfono</span>
         </a>
 
         <!-- Item 6 -->
@@ -97,7 +97,7 @@
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <img src="./icons/mariakii.ico" class="nav-icon max-h-full max-w-full" alt="Meraki" />
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Meraki</span>
+          <span class="whitespace-nowrap">Meraki</span>
         </a>
 
         <!-- Item 7 -->
@@ -106,7 +106,7 @@
           <div class="icon-container h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center">
             <img src="./icons/Transceiver.ico" class="nav-icon max-h-full max-w-full" alt="Transceiver" />
           </div>
-          <span class="text-xs sm:text-sm whitespace-nowrap">Transceiver</span>
+          <span class="whitespace-nowrap">Transceiver</span>
         </a>
       </div>
     </div>
@@ -114,8 +114,8 @@
 
   <!-- CASCADA DE NAVEGACIÓN RESPONSIVE "MARCA | PRODUCTO | NOMBRE" -->
   <div
-    class="bg-white border-b p-3 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
-    <div class="container mx-auto px-4">
+    class="bg-white border-b p-3 px-4 text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
+    <div class="container mx-auto sm:px-4">
 
       <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-blue-600">
         <i class="fa-solid fa-house text-[0.9em]"></i>
@@ -304,7 +304,7 @@
           <!-- Contenedor Principal: Imagen + Info -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
             <!-- Sección Imágenes -->
-            <div class="border rounded-lg py-4 sm:py-6">
+            <div class="border rounded-lg py-4 sm:py-6 px-4 lg:sticky top-4 bg-white">
               <!-- Imagen principal -->
               <div class="p-4">
                 <div class="aspect-square w-full max-w-md mx-auto flex items-center justify-center">
@@ -315,16 +315,16 @@
               </div>
 
               <!-- Miniaturas -->
-              <div class="flex gap-2 sm:gap-3 mt-4 justify-center">
-                <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition">
+              <div class="flex gap-2 mt-4 justify-center">
+                <div class="flex-1 aspect-square border rounded p-1 cursor-pointer hover:border-blue-400 transition">
                   <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front.jpg" alt="Vista 1"
                     class="w-full h-full object-contain" onclick="toExchangeImage(this)" />
                 </div>
-                <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition">
+                <div class="flex-1 aspect-square border rounded p-1 cursor-pointer hover:border-blue-400 transition">
                   <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front_large.jpg"
                     alt="Vista 2" class="w-full h-full object-contain" onclick="toExchangeImage(this)" />
                 </div>
-                <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition">
+                <div class="flex-1 aspect-square border rounded p-1 cursor-pointer hover:border-blue-400 transition">
                   <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_back.jpg" alt="Vista 2"
                     class="w-full h-full object-contain" onclick="toExchangeImage(this)" />
                 </div>
@@ -691,13 +691,12 @@
       </div>
 
       <!-- SIDEBAR DE LISTA DE PRECIOS (oculto en móvil) -->
-      <aside id="links-sidebar"
-        class="w-fit hidden lg:block bg-white rounded-lg shadow-sm p-4 w-56 flex-shrink-0 h-fit sticky top-4">
+      <aside class="w-fit hidden md:block bg-white rounded-lg shadow-sm p-4 w-56 flex-shrink-0 h-fit sticky top-4">
         <div class="links-section bg-white">
           <h3 class="text-lg font-bold text-black mb-3 border-b pb-2">
             Listas de Precios
           </h3>
-          <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 text-sm">
+          <ul class="grid text-sm">
             <!-- AMP -->
             <li class="hover:bg-blue-50 rounded transition-colors">
               <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" target="_blank"
